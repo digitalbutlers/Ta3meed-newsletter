@@ -1,0 +1,171 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles
+body,
+html,
+.body {
+  background: #f3f3f3 !important;
+}
+
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+// Full Width Headers
+.header {
+  background: #8a8a8a;
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 15px;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+.header .container {
+  background: transparent;
+}
+
+// Social Media
+table.button.facebook table td {
+  background: #3b5998 !important;
+  border-color: #3b5998;
+}
+
+table.button.twitter table td {
+  background: #1daced !important;
+  border-color: #1daced;
+}
+
+table.button.google table td {
+  background: #db4a39 !important;
+  border-color: #db4a39;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  /* or 58px */
+
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: capitalize;
+
+  background: linear-gradient(92.3deg, #006ffb 20.11%, #64e8a4 94.11%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg {
+  background: #f2f8ff;
+  border-radius: 40px;
+  padding: 60px 30px;
+
+  &.bg-gradient {
+    background: linear-gradient(93.69deg, #006ffb 0.68%, #64e8a4 98.6%);
+  }
+}
+
+a.btn {
+  font-size: 14px;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: right;
+  letter-spacing: -0.05em;
+  color: #006ffb;
+  &.h2-white {
+    color: #ffffff;
+  }
+
+  &.gradient {
+    text-align: center;
+    background: linear-gradient(92.3deg, #006ffb 20.11%, #64e8a4 94.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+.main-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 200%;
+  text-align: right;
+  letter-spacing: -0.05em;
+  color: #011f46;
+}
+
+.grey-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  text-align: right;
+  letter-spacing: -0.03em;
+
+  color: rgba(1, 31, 70, 0.5);
+}
+
+.gradient-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: -0.05em;
+
+  background: linear-gradient(92.3deg, #006ffb 61.73%, #64e8a4 94.11%), #006ffb;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-right: 20px;
+}
+
+.h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #006ffb;
+}
+
+.center-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #011f46;
+}
+
+th.callout-inner.white-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 90px 0;
+}
