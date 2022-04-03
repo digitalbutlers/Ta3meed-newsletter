@@ -11,11 +11,6 @@ html,
 .container.header {
   background: #f3f3f3;
 }
-
-.body-drip {
-  border-top: 8px solid #663399;
-}
-
 // Full Width Headers
 .header {
   background: #8a8a8a;
@@ -38,24 +33,14 @@ html,
   background: transparent;
 }
 
-// Social Media
-table.button.facebook table td {
-  background: #3b5998 !important;
-  border-color: #3b5998;
-}
-
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #db4a39 !important;
-  border-color: #db4a39;
-}
-
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+th.callout-inner {
+  @media only screen and (max-width: 450px) {
+    padding: 40px 20px !important;
+  }
 }
 
 .h1 {
@@ -63,22 +48,40 @@ table.button.google table td {
   font-size: 48px;
   line-height: 120%;
   /* or 58px */
-
+  color: #006ffb;
   text-align: center;
   letter-spacing: -0.05em;
   text-transform: capitalize;
 
-  background: linear-gradient(92.3deg, #006ffb 20.11%, #64e8a4 94.11%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  @media only screen and (max-width: 450px) {
+    font-size: 35px;
+  }
 }
 
 .bg {
   background: #f2f8ff;
   border-radius: 40px;
   padding: 60px 30px;
+
+  &.small {
+    padding: 15px 30px !important;
+    & th.columns {
+      padding-bottom: 0 !important;
+    }
+
+    & table.button {
+      margin: 0;
+    }
+
+    @media only screen and (max-width: 450px) {
+      padding: 12px 6px !important;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    padding: 30px 15px !important;
+    border-radius: 20px;
+  }
 
   &.bg-gradient {
     background: linear-gradient(93.69deg, #006ffb 0.68%, #64e8a4 98.6%);
@@ -96,17 +99,18 @@ a.btn {
   text-align: right;
   letter-spacing: -0.05em;
   color: #006ffb;
+
+  @media only screen and (max-width: 450px) {
+    font-size: 25px;
+  }
+
   &.h2-white {
     color: #ffffff;
   }
 
   &.gradient {
     text-align: center;
-    background: linear-gradient(92.3deg, #006ffb 20.11%, #64e8a4 94.11%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: #006ffb;
   }
 }
 
@@ -117,6 +121,10 @@ a.btn {
   text-align: right;
   letter-spacing: -0.05em;
   color: #011f46;
+
+  @media only screen and (max-width: 450px) {
+    font-size: 14px;
+  }
   &.white {
     color: #ffffff;
   }
@@ -131,6 +139,9 @@ a.btn {
   color: #ffffff;
   padding-right: 20px;
   vertical-align: middle;
+  @media only screen and (max-width: 450px) {
+    font-size: 14px;
+  }
 }
 
 .grey-text {
@@ -141,6 +152,9 @@ a.btn {
   letter-spacing: -0.03em;
 
   color: rgba(1, 31, 70, 0.5);
+  @media only screen and (max-width: 450px) {
+    font-size: 13px;
+  }
 }
 
 .gradient-text {
@@ -151,13 +165,12 @@ a.btn {
   align-items: center;
   text-align: right;
   letter-spacing: -0.05em;
-
-  background: linear-gradient(92.3deg, #006ffb 61.73%, #64e8a4 94.11%), #006ffb;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: #006ffb;
   padding-right: 20px;
+
+  @media only screen and (max-width: 450px) {
+    font-size: 14px;
+  }
 }
 
 .h4 {
@@ -167,6 +180,9 @@ a.btn {
   text-align: center;
   letter-spacing: -0.05em;
   color: #006ffb;
+  @media only screen and (max-width: 450px) {
+    font-size: 20px;
+  }
 }
 
 .center-text {
@@ -176,12 +192,15 @@ a.btn {
   text-align: center;
   letter-spacing: -0.03em;
   color: #011f46;
+  @media only screen and (max-width: 450px) {
+    font-size: 14px;
+  }
 }
 
 th.callout-inner.white-box {
   background: #ffffff;
   border-radius: 20px;
-  padding: 90px 0;
+  padding: 60px 30px;
 }
 
 .h4-white {
@@ -191,6 +210,9 @@ th.callout-inner.white-box {
   letter-spacing: -0.03em;
   color: #ffffff;
   text-align: right;
+  @media only screen and (max-width: 450px) {
+    font-size: 20px;
+  }
 }
 
 .name {
@@ -201,6 +223,9 @@ th.callout-inner.white-box {
   letter-spacing: -0.05em;
   color: #006ffb;
   margin-bottom: 20px;
+  @media only screen and (max-width: 450px) {
+    font-size: 20px;
+  }
 }
 
 .tel {
@@ -252,16 +277,25 @@ th.callout-inner.white-box {
   }
 }
 
-.menu-item a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: -0.03em;
-  text-transform: capitalize;
-  color: rgba(255, 255, 255, 0.7) !important;
-  transition: all 0.3s ease 0s;
-  &:hover {
-    color: #ffffff;
+.menu-item {
+  & a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  & img {
+    display: inline-block;
+    padding-right: 15px;
+    @media only screen and (max-width: 450px) {
+      padding-right: 5px;
+    }
   }
 }
 
@@ -287,6 +321,13 @@ th.callout-inner.white-box {
   height: 90px;
   background: #f9fbfc;
   border-radius: 20px;
+  padding-bottom: 0px !important;
+  @media only screen and (max-width: 450px) {
+    display: table-cell !important;
+    max-width: 30px !important;
+    border-radius: 20px;
+    padding: 5px !important;
+  }
 }
 
 .box-number {
@@ -295,4 +336,7 @@ th.callout-inner.white-box {
   line-height: 130%;
   letter-spacing: -0.05em;
   color: #016bf0;
+  @media only screen and (max-width: 450px) {
+    font-size: 16px;
+  }
 }
