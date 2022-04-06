@@ -59,7 +59,7 @@ th.callout-inner {
 }
 
 .bg {
-  background-color: #f2f8ff;
+  background: #f2f8ff;
   border-radius: 40px;
   padding: 60px 30px;
 
@@ -83,12 +83,6 @@ th.callout-inner {
     border-radius: 20px;
   }
 
-  &.bg-logo {
-    background-image: url(https://digitalbutlers.me/any_scripts/ta3meed/mail/img/bg-logo-white.png) !important;
-    background-repeat: no-repeat !important;
-    background-position: top center !important;
-  }
-
   &.bg-gradient {
     background: linear-gradient(93.69deg, #006ffb 0.68%, #64e8a4 98.6%);
   }
@@ -96,24 +90,11 @@ th.callout-inner {
 
 a.btn {
   font-size: 14px;
-  display: inline-block;
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
-.btn.rounded {
-  margin-right: 10px;
-}
-
-.row .body .columns th.large-10 {
-  vertical-align: middle;
-  padding-bottom: 0px !important;
-}
-.column-center {
-  vertical-align: middle;
-}
-
-.row-center {
-  vertical-align: center;
+.d-inline-block{
+	display: inline-block;
 }
 
 .h2 {
