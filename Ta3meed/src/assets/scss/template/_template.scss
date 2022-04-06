@@ -90,11 +90,21 @@ th.callout-inner {
 
 a.btn {
   font-size: 14px;
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
-.d-inline-block{
-	display: inline-block;
+.middle {
+  vertical-align: middle;
+  padding-bottom: 0px !important;
+}
+
+.btn-float {
+  float: left;
+  margin-right: 10px !important;
+}
+
+.d-inline-block {
+  display: inline-block;
 }
 
 .h2 {
@@ -197,6 +207,7 @@ a.btn {
   text-align: center;
   letter-spacing: -0.03em;
   color: #011f46;
+  max-width: 500px;
   @media only screen and (max-width: 450px) {
     font-size: 14px;
   }
